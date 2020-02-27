@@ -1,0 +1,6 @@
+{
+  "src": ["./tests/**/index.js"],
+  "port1": 5080,
+  "port2": 5081,
+  "hostname": "localhost"
+}

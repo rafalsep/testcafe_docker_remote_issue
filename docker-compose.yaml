@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  ui:
+    container_name: testcafe-test
+    image: test/testcafe-test
+    restart: always
+    volumes:
+      - .:/usr/app
+    environment:
+      PORT: 3000
+      HOST: 0.0.0.0
+    ports:
+      - 3000:3000
+      - 5000:5000
+      - 5080:5080
+      - 5081:5081
